@@ -1,0 +1,8 @@
+corpid:
+  2skj: ww2ce49636d5419ceb
+secret:
+  contract: pF4hlMG6tXwZpXqGoZ1O9Is1eKndszMwR_mdBYOKh-s
+  message : ""
+wework_env:
+  dev: https://qyapi.weixin.qq.com/cgi-bin
+  prod: https://qyapi.weixin.qq.com/cgi-bin
