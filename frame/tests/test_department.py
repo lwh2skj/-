@@ -1,5 +1,5 @@
 from frame.apis.department import Department
-
+import allure
 
 class TestDepartment:
     def setup_class(self):
@@ -18,7 +18,7 @@ class TestDepartment:
             "name": "2skj_update",
             "id": self.department_id
         }
-
+    @allure.story("部门管理场景用例")
     def test_department(self):
         """
         创建部门 -> 更新部门 -> 删除部门
@@ -44,3 +44,8 @@ class TestDepartment:
         depart_list = self.department.get().get("department_id")
         department_list = [data.get("id") for data in depart_list]
         assert self.department_id not in department_list
+"""
+allure serve ./result
+pytest.\test_litemall --alluredir=./report
+
+"""
